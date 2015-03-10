@@ -5,10 +5,11 @@ void ofApp::setup(){
 	
 	// if you want to get data events, you can add a listener toofxConnexion::connexionEvent
 	ofAddListener(ofxConnexion::connexionEvent, this, &ofApp::connexionMoved);
-	
-	glEnable(GL_DEPTH_TEST);
+    
+    ofBackground(0);
+    ofEnableDepthTest();
 	light.enable();
-	light.setPosition(+500, 0, 0);
+	light.setPosition(+500, +500, +500);
 }
 
 ofApp::~ofApp() {
@@ -28,7 +29,6 @@ void ofApp::connexionMoved(ConnexionData& data) {
 }
 
 void ofApp::draw(){
-	ofBackground(0, 0, 0);	
 	ofTranslate(ofGetWidth() / 2, ofGetHeight() / 2 , 0);
 	
 	// get the most recent data
@@ -38,13 +38,13 @@ void ofApp::draw(){
 	// depending on how you've configured your space navigator
 	ofTranslate(
 		data.translation[0],
-		data.translation[1],
-		-data.translation[2]);
+		data.translation[2],
+		data.translation[1]);
 	ofRotateX(-data.rotation[0]);
-	ofRotateY(-data.rotation[1]);
-	ofRotateZ(data.rotation[2]);
+	ofRotateY(-data.rotation[2]);
+	ofRotateZ(-data.rotation[1]);
 	
 	ofSetColor(255);
 	ofRotateX(180);
-	ofBox(200);
+	ofDrawCone(100, 200);
 }
