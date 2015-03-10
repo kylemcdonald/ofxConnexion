@@ -1,25 +1,25 @@
-#include "testApp.h"
+#include "ofApp.h"
 
-void testApp::setup(){
+void ofApp::setup(){
 	ofxConnexion::start();
 	
 	// if you want to get data events, you can add a listener toofxConnexion::connexionEvent
-	ofAddListener(ofxConnexion::connexionEvent, this, &testApp::connexionMoved);
+	ofAddListener(ofxConnexion::connexionEvent, this, &ofApp::connexionMoved);
 	
 	glEnable(GL_DEPTH_TEST);
 	light.enable();
 	light.setPosition(+500, 0, 0);
 }
 
-testApp::~testApp() {
+ofApp::~ofApp() {
 	ofxConnexion::stop();
 }
 
-void testApp::update(){
+void ofApp::update(){
 }
 
 // get data as soon as it comes in
-void testApp::connexionMoved(ConnexionData& data) {
+void ofApp::connexionMoved(ConnexionData& data) {
 	// this would be a good place to get data from multiple devices
 	cout << data.getButton(0) << " " << data.getButton(1) << endl;
 	
@@ -27,7 +27,7 @@ void testApp::connexionMoved(ConnexionData& data) {
 	ofxConnexion::setLed(data.getButton(0) || data.getButton(1));
 }
 
-void testApp::draw(){
+void ofApp::draw(){
 	ofBackground(0, 0, 0);	
 	ofTranslate(ofGetWidth() / 2, ofGetHeight() / 2 , 0);
 	

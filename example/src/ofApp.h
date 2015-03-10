@@ -3,11 +3,11 @@
 #include "ofxConnexion.h"
 #include "ofMain.h"
 
-class testApp : public ofBaseApp{
+class ofApp : public ofBaseApp{
 
 public:
 	void setup();
-	~testApp();
+	~ofApp();
 	void update();
 	void draw();
 	

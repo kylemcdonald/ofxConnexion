@@ -10,12 +10,7 @@ UInt16 ofxConnexion::clientId;
 
 void ofxConnexion::start() {
 	InstallConnexionHandlers(driverHandler, 0L, 0L);
-	string appName = EXECUTABLE_NAME;
-	unsigned char* pappName = new unsigned char[appName.size() + 1];
-	pappName[0] = (unsigned char) appName.size();
-	memcpy(&(pappName[1]), appName.c_str(), appName.size());
-	clientId = RegisterConnexionClient(0, (UInt8*) pappName, kConnexionClientModeTakeOver, kConnexionMaskAll);
-	delete [] pappName;
+	clientId = RegisterConnexionClient(0, NULL, kConnexionClientModeTakeOver, kConnexionMaskAll);
 }
 
 void ofxConnexion::stop() {
