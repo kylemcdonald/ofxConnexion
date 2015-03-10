@@ -10,7 +10,7 @@ UInt16 ofxConnexion::clientId;
 
 void ofxConnexion::start() {
 	InstallConnexionHandlers(driverHandler, 0L, 0L);
-	clientId = RegisterConnexionClient(0, NULL, kConnexionClientModeTakeOver, kConnexionMaskAll);
+	clientId = RegisterConnexionClient(kConnexionClientWildcard, NULL, kConnexionClientModeTakeOver, kConnexionMaskAll);
 }
 
 void ofxConnexion::stop() {

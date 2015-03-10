@@ -12,7 +12,7 @@ void ofApp::setup(){
 	light.setPosition(+500, +500, +500);
 }
 
-ofApp::~ofApp() {
+void ofApp::exit() {
 	ofxConnexion::stop();
 }
 
