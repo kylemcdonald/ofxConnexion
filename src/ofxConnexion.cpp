@@ -33,7 +33,7 @@ void ofxConnexion::driverHandler(io_connect_t connection, natural_t messageType,
 		case kConnexionMsgDeviceState:
 			switch (msg->command) {
 				case kConnexionCmdHandleAxis: {
-					memcpy(connexionData.translation, &(msg->axis[0]), 3 * sizeof(short));
+					memcpy(connexionData.position, &(msg->axis[0]), 3 * sizeof(short));
 					memcpy(connexionData.rotation, &(msg->axis[3]), 3 * sizeof(short));
 				}
 				case kConnexionCmdHandleButtons: {

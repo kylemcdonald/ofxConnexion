@@ -5,7 +5,7 @@
 
 class ConnexionData {
 public:
-	short translation[3];
+	short position[3];
 	short rotation[3];
 	short deviceId;
 	short buttonState;
