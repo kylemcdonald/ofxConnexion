@@ -11,6 +11,10 @@ public:
 	short buttonState;
 	
 	bool getButton(int button);
+    
+    // these assume you set the speed to max in the control panel
+    ofVec3f getNormalizedPosition();
+    ofVec3f getNormalizedRotation();
 };
 
 class ofxConnexion {

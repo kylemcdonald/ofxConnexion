@@ -4,6 +4,32 @@ bool ConnexionData::getButton(int button) {
 	return (buttonState & (1 << button)) != 0;
 }
 
+ofVec3f clampNorm(ofVec3f& vec) {
+    return ofVec3f(ofClamp(vec.x, -1, 1),
+                   ofClamp(vec.y, -1, 1),
+                   ofClamp(vec.z, -1, 1));
+}
+
+// these two functions assume your speed is set to max
+// the actual values returned go above 2600 (sometimes significantly)
+// but it seems to be an interaction between different axes
+// causing this, and not a change in the axis itself
+ofVec3f ConnexionData::getNormalizedPosition() {
+    ofVec3f result(position[0],
+                   position[1],
+                   position[2]);
+    result /= 2600.;
+    return clampNorm(result);
+}
+
+ofVec3f ConnexionData::getNormalizedRotation() {
+    ofVec3f result(rotation[0],
+                   rotation[1],
+                   rotation[2]);
+    result /= 2600.;
+    return clampNorm(result);
+}
+
 ofEvent<ConnexionData> ofxConnexion::connexionEvent;
 ConnexionData ofxConnexion::connexionData;
 UInt16 ofxConnexion::clientId;
