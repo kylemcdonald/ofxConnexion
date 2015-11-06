@@ -29,22 +29,53 @@ void ofApp::connexionMoved(ConnexionData& data) {
 }
 
 void ofApp::draw(){
-	ofTranslate(ofGetWidth() / 2, ofGetHeight() / 2 , 0);
+    
+    ofEnableLighting();
+    ofPushMatrix();
+    
+    ofTranslate(ofGetWidth() / 2, ofGetHeight() / 2 , 0);
 	
 	// get the most recent data
 	ConnexionData& data = ofxConnexion::connexionData;
 	
 	// some of these things are negative, but might be different
-	// depending on how you've configured your space navigator
-	ofTranslate(
-		data.translation[0],
-		data.translation[2],
-		data.translation[1]);
-	ofRotateX(-data.rotation[0]);
-	ofRotateY(-data.rotation[2]);
-	ofRotateZ(-data.rotation[1]);
+    // depending on how you've configured your space navigator
+    ofTranslate(
+                data.position[0],   // TX
+                data.position[2],   // TY
+                data.position[1]);  // TZ
+    
+    ofRotateX(-data.rotation[0]);   // RX
+    ofRotateY(-data.rotation[2]);   // RY
+	ofRotateZ(-data.rotation[1]);   // RZ
 	
 	ofSetColor(255);
 	ofRotateX(180);
 	ofDrawCone(100, 200);
+    
+    ofPopMatrix();
+    
+    //-
+    
+    ofDisableLighting();
+    
+    ofPushStyle();
+    ofSetColor(255);
+    
+    stringstream ss;
+    ss << endl;
+    ss << "POSITION" << endl;
+    ss << "data.position[0] : " << data.position[0] << endl;
+    ss << "data.position[2] : " << data.position[2] << endl;
+    ss << "data.position[1] : " << data.position[1] << endl;
+    ss << endl;
+    
+    ss << "ROTATION" << endl;
+    ss << "data.rotation[0] : " << data.rotation[0] << endl;
+    ss << "data.rotation[2] : " << data.rotation[2] << endl;
+    ss << "data.rotation[1] : " << data.rotation[1] << endl;
+    ss << endl;
+    
+    ofDrawBitmapString(ss.str().c_str(), 10, 20);
+    ofPopStyle();
 }
