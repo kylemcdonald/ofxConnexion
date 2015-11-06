@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2742278B1AAF883000FE1EEE /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 274227891AAF883000FE1EEE /* ofApp.cpp */; };
-		274227901AAF884C00FE1EEE /* ofxConnexion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2742278E1AAF884C00FE1EEE /* ofxConnexion.cpp */; };
-		274227921AAF888A00FE1EEE /* 3DconnexionClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274227911AAF888A00FE1EEE /* 3DconnexionClient.framework */; };
+		32E246B11BEC4E3B0025DFAC /* ofxConnexion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32E246AF1BEC4E3B0025DFAC /* ofxConnexion.cpp */; };
+		32E246B31BEC4E450025DFAC /* 3DconnexionClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E246B21BEC4E450025DFAC /* 3DconnexionClient.framework */; };
 		6474CBF619BCE019003C94E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6474CBF019BCE00B003C94E2 /* AVFoundation.framework */; };
 		6474CBF719BCE019003C94E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6474CBF119BCE00B003C94E2 /* CoreMedia.framework */; };
 		6474CBF819BCE019003C94E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6474CBF219BCE00B003C94E2 /* QuartzCore.framework */; };
@@ -66,9 +66,9 @@
 /* Begin PBXFileReference section */
 		274227891AAF883000FE1EEE /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
 		2742278A1AAF883000FE1EEE /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
-		2742278E1AAF884C00FE1EEE /* ofxConnexion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxConnexion.cpp; sourceTree = "<group>"; };
-		2742278F1AAF884C00FE1EEE /* ofxConnexion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxConnexion.h; sourceTree = "<group>"; };
-		274227911AAF888A00FE1EEE /* 3DconnexionClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = 3DconnexionClient.framework; path = ../../../../../../../Library/Frameworks/3DconnexionClient.framework; sourceTree = "<group>"; };
+		32E246AF1BEC4E3B0025DFAC /* ofxConnexion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxConnexion.cpp; sourceTree = "<group>"; };
+		32E246B01BEC4E3B0025DFAC /* ofxConnexion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxConnexion.h; sourceTree = "<group>"; };
+		32E246B21BEC4E450025DFAC /* 3DconnexionClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = 3DconnexionClient.framework; sourceTree = "<group>"; };
 		6474CBF019BCE00B003C94E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6474CBF119BCE00B003C94E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		6474CBF219BCE00B003C94E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -114,7 +114,7 @@
 				E45BE9800E8CC7DD009D7055 /* CoreFoundation.framework in Frameworks */,
 				E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */,
 				E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */,
-				274227921AAF888A00FE1EEE /* 3DconnexionClient.framework in Frameworks */,
+				32E246B31BEC4E450025DFAC /* 3DconnexionClient.framework in Frameworks */,
 				E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */,
 				E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */,
 				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
@@ -126,20 +126,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2742278C1AAF884C00FE1EEE /* ofxConnexion */ = {
+		32E246AD1BEC4E3B0025DFAC /* ofxConnexion */ = {
 			isa = PBXGroup;
 			children = (
-				274227911AAF888A00FE1EEE /* 3DconnexionClient.framework */,
-				2742278D1AAF884C00FE1EEE /* src */,
+				32E246B21BEC4E450025DFAC /* 3DconnexionClient.framework */,
+				32E246AE1BEC4E3B0025DFAC /* src */,
 			);
 			name = ofxConnexion;
 			sourceTree = "<group>";
 		};
-		2742278D1AAF884C00FE1EEE /* src */ = {
+		32E246AE1BEC4E3B0025DFAC /* src */ = {
 			isa = PBXGroup;
 			children = (
-				2742278E1AAF884C00FE1EEE /* ofxConnexion.cpp */,
-				2742278F1AAF884C00FE1EEE /* ofxConnexion.h */,
+				32E246AF1BEC4E3B0025DFAC /* ofxConnexion.cpp */,
+				32E246B01BEC4E3B0025DFAC /* ofxConnexion.h */,
 			);
 			name = src;
 			path = ../src;
@@ -148,7 +148,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				2742278C1AAF884C00FE1EEE /* ofxConnexion */,
+				32E246AD1BEC4E3B0025DFAC /* ofxConnexion */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
-				274227901AAF884C00FE1EEE /* ofxConnexion.cpp in Sources */,
+				32E246B11BEC4E3B0025DFAC /* ofxConnexion.cpp in Sources */,
 				2742278B1AAF883000FE1EEE /* ofApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +342,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -358,13 +358,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
 					"-mtune=native",
 				);
-				SDKROOT = macosx;
+				SDKROOT = macosx10.10;
 			};
 			name = Debug;
 		};
@@ -372,7 +372,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -389,26 +389,27 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
 					"-mtune=native",
 				);
-				SDKROOT = macosx;
+				SDKROOT = macosx10.10;
 			};
 			name = Release;
 		};
 		E4B69B600A3A1757003C02F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -422,9 +423,10 @@
 					"$(inherited)",
 					/Users/kyle/Documents/openFrameworks/addons/ofxOpenCv/libs/opencv/lib/osx,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = ofAppDebug;
-				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxCv/libs/ofxCv/include/ ../../../addons/ofxCv/libs/CLD/include/ ../../../addons/ofxOpenCv/libs/opencv/include/";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxCv/libs/ofxCv/include/ ../../../addons/ofxOpenCv/libs/opencv/include/ ../../../addons/ofxCv/libs/CLD/include/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -432,13 +434,14 @@
 		E4B69B610A3A1757003C02F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -451,9 +454,10 @@
 					"$(inherited)",
 					/Users/kyle/Documents/openFrameworks/addons/ofxOpenCv/libs/opencv/lib/osx,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = ofApp;
-				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxCv/libs/ofxCv/include/ ../../../addons/ofxCv/libs/CLD/include/ ../../../addons/ofxOpenCv/libs/opencv/include/";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxCv/libs/ofxCv/include/ ../../../addons/ofxOpenCv/libs/opencv/include/ ../../../addons/ofxCv/libs/CLD/include/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
