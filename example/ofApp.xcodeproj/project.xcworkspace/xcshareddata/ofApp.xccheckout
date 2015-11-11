@@ -5,15 +5,15 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>66DFE35C-2BD3-491C-A699-E748414C392C</string>
+	<string>5FC2DFCD-A269-40F9-B1E6-EBE3B9218029</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ofApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>2DE9C8846D9375EAACFABA8963120E8E7719BAF5</key>
-		<string>github.com:kylemcdonald/openFrameworks.git</string>
+		<string>https://github.com/openframeworks/openFrameworks.git</string>
 		<key>6E70900DF0411F738E24EFFDA46DD24EEF0EAF0F</key>
-		<string>github.com:kylemcdonald/ofxConnexion.git</string>
+		<string>https://github.com/kylemcdonald/ofxConnexion.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>example/ofApp.xcodeproj</string>
@@ -25,7 +25,7 @@
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:kylemcdonald/ofxConnexion.git</string>
+	<string>https://github.com/kylemcdonald/ofxConnexion.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

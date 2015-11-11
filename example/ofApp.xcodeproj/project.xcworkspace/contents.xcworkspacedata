@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ofApp.xcodeproj">
+      location = "self:/Users/manu/Documents/openFrameworks/apps/myApps/TESTspaceNavigator/ofApp.xcodeproj">
    </FileRef>
 </Workspace>
